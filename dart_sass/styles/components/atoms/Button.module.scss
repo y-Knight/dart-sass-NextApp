@@ -1,0 +1,12 @@
+
+@use '../../variables' as v;
+
+.button_container {
+  background-color: v.$sass-test_two;
+  width: 100px;
+  height: 50px;
+}
+
+.button_sass_sample {
+  background-color: v.$sass-test;
+}

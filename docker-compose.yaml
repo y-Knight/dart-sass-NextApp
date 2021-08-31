@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  dart_sass:
+    container_name: dart_sass_next_container
+    build: ./docker/dart_app
+    ports:
+      - 13050:3000
+      - 16056:6006
+    volumes:
+      - ./dart_sass:/dart_sass
+    stdin_open: true
+    tty: true
+    environment:
+      - TZ=Asia/Tokyo
+    networks:
+      - default
+
+networks:
+  default:
